@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in System</title>
+    <link rel="stylesheet" href="./sign up/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./sign up/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <form id="registerForm" class="register-form">
+        <div class="container mx-auto my-5 text-center">
+          <div class="group shadow-lg mx-auto w-75 p-5">
+            <h1 class="text-info mb-4">Smart Login System</h1>
+
+            <input
+              type="text"
+              class="form-control mb-4"
+              name="username"
+              id="signUpName"
+              placeholder="Enter Your Name"
+            />
+            <div class="alert alert-danger d-none" id="nameAlert">
+              At Least Two Characters name
+            </div>
+            <input
+              type="email"
+              class="form-control mb-4"
+              name="userEmail"
+              id="signUpEmail"
+              placeholder="Enter Your Email"
+            />
+            <div class="alert alert-danger d-none" id="emailAlert">
+              Please Enter A Vaild Email
+            </div>
+            <div class="alert alert-danger d-none" id="existEmailAlert">
+              Email Is Already Exist
+            </div>
+            <input
+              type="password"
+              class="form-control mb-4"
+              name="userPassword"
+              id="signUpPassword"
+              placeholder="Ex: Password123#"
+            />
+            <div class="alert alert-danger d-none" id="passwordAlert">
+              At Least 8 Characters <br />
+              -One Uppercase <br />
+              At least 1 Special Character <br />
+              -One Number
+            </div>
+            <div class="alert alert-success d-none" id="successAlert">
+              Success
+            </div>
+
+            <button class="btn btn-outline-info w-100">sign Up</button>
+
+            <p class="text-white mt-3">
+              Do you have an account ?
+              <a href="./sign in/LogIn.html">sign In</a>
+            </p>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <script src="./sign up/js/index.js"></script>
+    <script src="./sign up/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
