@@ -9,6 +9,6 @@ function displayName() {
 }
 function Logout() {
   setTimeout(function () {
-    window.location.href = "../sign in/Login.html";
+    window.location.href = "/index.html";
   }, 1500);
 }
